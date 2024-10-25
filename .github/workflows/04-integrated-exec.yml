@@ -1,7 +1,7 @@
 # CID DE NIVEL 4 - Disparo dentro do fluxo de Ci de desenvolvimento
 
 #nome que vai aparecer la nas opções de pipe
-name: 'Execução manual'
+name: 'Execução Integrada'
 
 #Trigges ou gatilhos de execução
 # gatilho de exec manual = workflow_dispatch
