@@ -27,7 +27,6 @@ jobs:
       - name: Padronizacao de codigo (Lint)
         run: yarn lint
 
-
   unit:
     runs-on: ['ubuntu-latest']
 
@@ -42,7 +41,6 @@ jobs:
 
       - name: Testes de Unidade
         run: yarn run test
-
 
   e2e-tests:
     #maquina que o job vai executar
