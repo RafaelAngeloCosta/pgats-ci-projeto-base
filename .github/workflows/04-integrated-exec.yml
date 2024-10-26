@@ -10,6 +10,8 @@ on:
   workflow_dispatch:
 
 jobs:
+  # descrição do job
+
   inspection:
     runs-on: ['ubuntu-latest']
 
@@ -25,7 +27,23 @@ jobs:
       - name: Padronizacao de codigo (Lint)
         run: yarn lint
 
-  # descrição do job
+
+  unit:
+    runs-on: ['ubuntu-latest']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalado Yarn
+        run: npm install -g yarn
+
+      - name: Instalado dependências
+        run: yarn
+
+      - name: Testes de Unidade
+        run: yarn run test
+
+
   e2e-tests:
     #maquina que o job vai executar
     runs-on: ['ubuntu-latest']
